@@ -52,8 +52,8 @@
 }
 
 /* 去除头像阴影 */
-.normal-shadow{
-    box-shadow:0 0 0 0 ;
+div.dropdown.wrapper span img.normal-shadow{
+    box-shadow:unset !important ;
 }
 
 /* 大图圆角 */
@@ -66,11 +66,9 @@
     0% {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.2);
     }
-
     to {
         transform: scale(1);
     }

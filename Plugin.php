@@ -48,7 +48,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             self::buildSearchIndex();
         }
 
-        $click_themes = new Typecho_Widget_Helper_Form_Element_Radio(
+        /* $click_themes = new Typecho_Widget_Helper_Form_Element_Radio(
             'click_themes',
             array(
                 '1' => _t('开启'),
@@ -58,7 +58,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             _t('是否启用炫光鼠标特效'),
             _t('')
         );
-        $form->addInput($click_themes);
+        $form->addInput($click_themes); */
     }
     
     /**
@@ -85,6 +85,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         //  输出js文件
         $src = $options->pluginUrl . '/SkyMo/js/script.js';
         echo "<script src='$src'></script>";
+        
         //鼠标点击特效
         $click = $options->pluginUrl . '/SkyMo/js/mouse/click.js';
         echo "<script src='$click'></script>";
