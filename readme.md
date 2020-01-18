@@ -95,7 +95,8 @@ echo '<link rel="stylesheet" type="text/css" href="' . $path . 'css/github-badge
 ```
 
 # 赞赏按钮跳动
-在style.css文件中添加以下代码
+在`style.css`文件中添加以下代码
+
 ```
 /* 跳动特效 */
 @keyframes drop {

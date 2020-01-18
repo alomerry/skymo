@@ -105,3 +105,61 @@ div.support-author>button.btn-pay {
 #blog_info>ul>li:nth-child(4)>span.badge{
     background-color: #ff0076;
 }
+
+/* 修改 code 样式 */
+#post-content pre code {
+    margin: 0px 0px 0 40px !important;
+    padding: 0 !important;
+}
+#post-content pre:before{
+    background: #474949 !important;
+    color: #ffffff !important;
+    padding: 0px 5px 10px 15px !important;
+}
+
+/* bilibili视频挂载 */
+
+.iframe_video {
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .iframe_video {
+        height: 15em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .iframe_video {
+        height: 20em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .iframe_video {
+        height: 30em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .iframe_video {
+        height: 40em;
+    }
+}
+
+.iframe_cross {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%
+}
+
+.iframe_cross iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0
+}
+
