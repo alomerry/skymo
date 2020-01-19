@@ -108,13 +108,13 @@ div.support-author>button.btn-pay {
 
 /* 修改 code 样式 */
 #post-content pre code {
-    margin: 0px 0px 0 40px !important;
-    padding: 0 !important;
+    margin: 0px 0px 0px 40px !important;
+    padding: 5px 0px 0px 0px !important;
 }
 #post-content pre:before{
     background: #474949 !important;
     color: #ffffff !important;
-    padding: 0px 5px 10px 15px !important;
+    padding: 5px 5px 10px 15px !important;
 }
 
 /* bilibili视频挂载 */
@@ -163,3 +163,28 @@ div.support-author>button.btn-pay {
     top: 0
 }
 
+
+/* 赞赏模态框样式修改 */
+#myModal div.modal-content {
+    background: rgba(255, 255, 255, 0.53);
+}
+
+/* 博文面板样式修改 */
+#postpage div.panel {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+#postpage .post-img-figcaption {
+    color: #252222;
+}
+#post-content blockquote {
+    background: rgba(255, 255, 255, 0.17);
+}
+
+.show-foot .notebook span,.show-foot .copyright span{
+    /* 修改日期字体大小 */
+    font-size: 14px;
+}
+.table-responsive table thead tr th{ 
+    /* 表格表头颜色 */
+    background-color: #504f4f8f;
+}
