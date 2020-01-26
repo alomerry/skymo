@@ -284,27 +284,101 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     text-shadow: 0 0 3px #fff !important;
     font-size: 26px !important;
 }
-
-/* 首页文章图片模态框大小响应式 */
+/* 
+首页文章图片模态框大小响应式
 
 @media screen and (max-width: 1200px) {
-    .post-thumbnail-inner-modal {
+    .post-thumbnail-inner-modal , .panel-picture .entry-header{
         height: 190px;
+    }
+    h3.index-post-title{
+        line-height: 95px;
     }
 }
 
 @media screen and (min-width: 1201px) {
-    .post-thumbnail-inner-modal {
+    .post-thumbnail-inner-modal , .panel-picture .entry-header{
         height: 250px;
+    }
+    h3.index-post-title{
+        line-height: 125px;
     }
 }
 
 @media screen and (min-width: 1801px) {
-    .post-thumbnail-inner-modal {
+    .post-thumbnail-inner-modal , .panel-picture .entry-header{
         height: 280px;
+    }
+    h3.index-post-title{
+        line-height: 140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-thumbnail-inner-modal , .panel-picture .entry-header{
+        height: 260px;
+    }
+    h3.index-post-title{
+        line-height: 130px;
+    }
+}
+@media screen and (max-width: 651px) {
+    .post-thumbnail-inner-modal , .panel-picture .entry-header {
+        height: 220px;
+    }
+    h3.index-post-title{
+        line-height: 120px;
     }
 }
 
 div.blog-post div.panel-picture {
-    overflow:hidden;
+    overflow: hidden;
 }
+
+.post-thumbnail a.post-thumbnail-inner {
+    transition: opacity .35s, transform .35s
+}
+
+.panel-picture:hover a.post-thumbnail-inner{
+    添加背景模糊效果
+    filter: blur(3px);
+    添加背景放大效果
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1);
+}
+
+.post-thumbnail-inner-modal {
+    首页博文蒙版未获取焦点时的灰色透明背景
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.panel-picture:hover>.post-thumbnail>a.post-thumbnail-inner>div {
+     首页博文蒙版获取焦点时的灰色透明背景
+    background-color: rgba(0, 0, 0, .4);
+}
+.panel-picture div.entry-meta{
+    文章描述隐藏,hover显示
+    opacity: 0;
+    transition: opacity .35s,transform .35s;
+    transform: scale3d(.8, .8, 1);
+    transform-origin: 50% -100%
+}
+.panel-picture:hover div.entry-meta{
+    文章描述隐藏,hover显示
+    opacity: 1;
+    transform: scale3d(1, 1, 1)
+}
+
+.panel-picture > header h3.index-post-title{
+    文章标题隐藏,hover显示
+    transition: opacity .35s,transform .35s;
+    transform: scale3d(.8, .8, 1);
+    transform-origin: 50% 100%
+}
+.panel-picture:hover h3.index-post-title{
+    文章标题hover显示
+    opacity: 1;
+    transition: opacity .35s,transform .35s;
+    transform: scale3d(1, 1, 1)
+} */

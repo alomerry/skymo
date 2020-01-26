@@ -53,8 +53,14 @@ $(document).ready(function () {
         var item=document.createElement("div");
             $(item).css("width","100%");
             $(item).addClass("post-thumbnail-inner-modal ");
-            $(item).css("background-color","rgba(0, 0, 0, 0.3)");
+            // $(item).css("background-color","rgba(0, 0, 0, 0.3)");
             $(this).append(item);
+    });
+
+    $(".panel-picture header").each(function(index,element){
+        var top = $(this).find("h3 a span");
+        $(this).prepend(top);
+        $(this).find("h3 a span").remove();
     });
     
 })

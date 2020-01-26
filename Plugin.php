@@ -111,5 +111,11 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $options = Helper::options();
         $path = $options->pluginUrl . '/SkyMo/';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . 'css/style.css" />';
+
+        $card = $options->pluginUrl . '/SkyMo/';
+        echo '<link rel="stylesheet" type="text/css" href="' . $card . 'css/card.css" />';
+
+        $src = $options->pluginUrl . '/SkyMo/js/header.js';
+        echo "<script src='$src'></script>";
     }
 }
