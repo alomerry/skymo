@@ -47,4 +47,14 @@ $(document).ready(function () {
     $('#footer span.text-ellipsis').last().html(recodeInfo);
 
     $("body").prepend("<canvas id='stage1' class='stage' style='position: fixed;'></canvas>")
+
+
+    $(".post-thumbnail >a").each(function(index,element){
+        var item=document.createElement("div");
+            $(item).css("width","100%");
+            $(item).addClass("post-thumbnail-inner-modal ");
+            $(item).css("background-color","rgba(0, 0, 0, 0.3)");
+            $(this).append(item);
+    });
+    
 })

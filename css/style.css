@@ -1,67 +1,73 @@
 /*首页头像自动旋转*/
-.thumb-lg{
-    width:130px;
+
+.thumb-lg {
+    width: 130px;
 }
 
-.avatar{
+.avatar {
     -webkit-transition: 0.4s;
     -webkit-transition: -webkit-transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
-    -moz-transition: -moz-transform 0.4s ease-out; 
+    -moz-transition: -moz-transform 0.4s ease-out;
 }
 
-.avatar:hover{
+.avatar:hover {
     transform: rotateZ(360deg);
     -webkit-transform: rotateZ(360deg);
     -moz-transform: rotateZ(360deg);
 }
 
-#aside-user span.avatar{
-    animation-timing-function:cubic-bezier(0,0,.07,1)!important;
-    border:0 solid
+#aside-user span.avatar {
+    animation-timing-function: cubic-bezier(0, 0, .07, 1)!important;
+    border: 0 solid
 }
 
-#aside-user span.avatar:hover{
-    transform:rotate(360deg) scale(1.2);
-    border-width:5px;
-    animation:avatar .5s
+#aside-user span.avatar:hover {
+    transform: rotate(360deg) scale(1.2);
+    border-width: 5px;
+    animation: avatar .5s
 }
 
 /* 左上角文字大小 */
-.navbar-brand>span.hidden-folded{
+
+.navbar-brand>span.hidden-folded {
     font-size: 16px;
 }
 
 /*首页文章图片获取焦点放大*/
-.item-thumb{
-    cursor: pointer;  
-    transition: all 0.6s;  
-}
 
-.item-thumb:hover{
-      transform: scale(1.05);  
-}
-
-.item-thumb-small{
-    cursor: pointer;  
+.item-thumb {
+    cursor: pointer;
     transition: all 0.6s;
 }
 
-.item-thumb-small:hover{
+.item-thumb:hover {
+    transform: scale(1.05);
+}
+
+.item-thumb-small {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.item-thumb-small:hover {
     transform: scale(1.05);
 }
 
 /* 去除头像阴影 */
-div.dropdown.wrapper span img.normal-shadow{
-    box-shadow:unset !important ;
+
+div.dropdown.wrapper span img.normal-shadow {
+    box-shadow: unset !important;
 }
 
 /* 大图圆角 */
+
 .item-thumb {
     border-radius: 6px 6px 6px 6px;
 }
 
 /* 赞赏按钮跳动 */
+
 @keyframes drop {
     0% {
         transform: scale(1);
@@ -73,45 +79,51 @@ div.dropdown.wrapper span img.normal-shadow{
         transform: scale(1);
     }
 }
+
 div.support-author>button.btn-pay {
     animation: drop 1s infinite;
 }
 
 /* Tag颜色 */
-.tags a:nth-child(1)
-{
-    background:#3399ffc9;
+
+.tags a:nth-child(1) {
+    background: #3399ffc9;
 }
-.tags a:nth-child(2)
-{
-    background:#ff3300b8;
+
+.tags a:nth-child(2) {
+    background: #ff3300b8;
 }
-.tags a:nth-child(3)
-{
-    background:#f90;
+
+.tags a:nth-child(3) {
+    background: #f90;
 }
 
 /* 博客信息颜色 */
 
-#blog_info>ul>li:nth-child(1)>span.badge{
+#blog_info>ul>li:nth-child(1)>span.badge {
     background-color: #0043ff;
 }
-#blog_info>ul>li:nth-child(2)>span.badge{
+
+#blog_info>ul>li:nth-child(2)>span.badge {
     background-color: #cc00ff;
 }
-#blog_info>ul>li:nth-child(3)>span.badge{
+
+#blog_info>ul>li:nth-child(3)>span.badge {
     background-color: #ffb100;
 }
-#blog_info>ul>li:nth-child(4)>span.badge{
+
+#blog_info>ul>li:nth-child(4)>span.badge {
     background-color: #ff0076;
 }
 
 /* 修改 code 样式 */
+
 #post-content pre code {
     margin: 0px 0px 0px 40px !important;
     padding: 5px 0px 0px 0px !important;
 }
-#post-content pre:before{
+
+#post-content pre:before {
     background: #474949 !important;
     color: #ffffff !important;
     padding: 5px 5px 10px 15px !important;
@@ -163,49 +175,136 @@ div.support-author>button.btn-pay {
     top: 0
 }
 
-
 /* 赞赏模态框样式修改 */
+
 #myModal div.modal-content {
     background: rgba(255, 255, 255, 0.53);
 }
 
 /* 博文面板样式修改 */
+
 #postpage div.panel {
     background-color: rgba(255, 255, 255, 0.07);
 }
+
 #postpage .post-img-figcaption {
     color: #252222;
 }
+
 #post-content blockquote {
     background: rgba(255, 255, 255, 0.17);
 }
 
-.show-foot .notebook span,.show-foot .copyright span{
+.show-foot .notebook span, .show-foot .copyright span {
     /* 修改日期字体大小 */
     font-size: 14px;
 }
-.table-responsive table thead tr th{ 
+
+.show-foot .notebook {
+    /* 修改日期颜色 */
+    color: #333c !important;
+}
+
+.show-foot .copyright {
+    color: #333333d6 !important;
+}
+
+.table-responsive table thead tr th {
     /* 表格表头颜色 */
     background-color: #504f4f8f;
 }
-#postpage {
-    color: #4a4a4a;
 
+.article__reward-info {
+    /* 赞赏文字颜色 */
+    color: #333c !important;
 }
+
+#postpage {
+    color: #4a4a4a !important;
+}
+
 #post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5, #post-content h6 {
-    color: #464646;
+    color: #464646 !important;
 }
+
 code {
     /* code样式修改 */
-    color: #c7254ed4;
-    background-color: rgba(255, 255, 255, 0.08);
+    color: #c7254ed4 !important;
+    /* background-color: rgba(255, 255, 255, 0.08) !important; */
 }
 
+.panel-default>.panel-footer, .panel-default>.panel-heading {
+    /* 修改折叠框背景 */
+    background: rgba(0, 0, 0, .17) !important;
+}
+
+.panel .accordion-toggle {
+    /* 折叠框标题字体大小 */
+    font-size: 17px !important;
+}
+
+.panel-default>.panel-heading {
+    /* 折叠框标题字体颜色 */
+    color: #333333c9 !important;
+}
+
+.comment-content-true a, .wrapper-lg .entry-content a {
+    /* 超链接样式 */
+    color: rgb(189, 56, 95) !important;
+    border-bottom: 1px solid #ffffff00 !important;
+}
 
 /* 将全部字体加粗 */
+
 * {
     font-weight: 900;
 }
 
+/* 网站消息背景文字大小颜色 */
 
+.alert-warning {
+    color: #3e3b3b !important;
+    background-color: rgba(22, 211, 249, 0.57) !important;
+}
 
+.alert {
+    font-size: 18px !important;
+}
+
+/* 修改首页面板背景透明度 */
+
+#post-panel {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+/* 首页文章列表标题 */
+
+h2.text-ellipsis>a, h3.text-ellipsis>a {
+    /* 标题炫光 */
+    text-shadow: 0 0 3px #fff !important;
+    font-size: 26px !important;
+}
+
+/* 首页文章图片模态框大小响应式 */
+
+@media screen and (max-width: 1200px) {
+    .post-thumbnail-inner-modal {
+        height: 190px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .post-thumbnail-inner-modal {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1801px) {
+    .post-thumbnail-inner-modal {
+        height: 280px;
+    }
+}
+
+div.blog-post div.panel-picture {
+    overflow:hidden;
+}
