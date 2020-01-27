@@ -24,7 +24,7 @@
     margin-top: 0!important
 }
 
-.wrapper-md .panel:not(.b-a), .wrapper-md .panel-small {
+.wrapper-md .panel:not(.b-a,.b-light), .wrapper-md .panel-small:not(.b-light) {
     transition: all .2s;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2)!important
 }

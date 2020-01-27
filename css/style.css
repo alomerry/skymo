@@ -183,10 +183,11 @@ div.support-author>button.btn-pay {
 
 /* 博文面板样式修改 */
 
-#postpage div.panel {
+#postpage div.panel:not(.b-light) {
     background-color: rgba(255, 255, 255, 0.07);
 }
-#postpage .panel {
+
+#postpage .panel:not(.b-light) {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -259,14 +260,11 @@ code:not(.hljs) {
 
 /* 字体加粗 */
 
-.dropdown.wrapper span.clear, nav.navi ul.nav >li, nav.navi ul.nav >li>span,
-nav.navi ul.nav >li>a,#tag_cloud-2 h5{
+.dropdown.wrapper span.clear, nav.navi ul.nav>li, nav.navi ul.nav>li>span, nav.navi ul.nav>li>a, #tag_cloud-2 h5 {
     font-weight: 900;
 }
-#small_widgetsul ul.entry-meta.text-muted,#post-panel .breadcrumb,#widget-tabs-4-hots h5,
-#widget-tabs-4-hots h4,#widget-tabs-4-hots a,#blog_info li,
-#widget-tabs-4-comments h4,#widget-tabs-4-comments a,
-#widget-tabs-4-random h4,#widget-tabs-4-random a{
+
+#small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #blog_info li, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
     font-weight: 900;
 }
 
@@ -296,18 +294,70 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
 }
 
 /* 评论可见背景颜色修改 */
+
 .hideContent {
     background: rgba(255, 255, 255, 0.3);
 }
 
 /* 修改站内文章分享样式 */
+
 .post-inser .text-muted {
     color: rgb(53, 51, 51);
     font-size: 15px;
 }
-#post-content .preview .post-inser{
+
+#post-content .preview .post-inser {
     margin: 0 !important;
 }
+
+/* github 页面修改 */
+
+.panel div.b-light.bg-info {
+    background-color: #23b7e5;
+}
+
+.panel div.b-light.bg-success {
+    background-color: #27c24c;
+}
+
+.panel div.b-light.bg-dark {
+    background-color: #3a3f51;
+}
+
+.panel div.b-light.bg-light {
+    color: #58666e !important;
+    background-color: #edf1f2;
+}
+.panel div.b-light.bg-light .text-muted{
+    color: #98a6ad;
+}
+.panel div.b-light.bg-light .lter{
+    background-color: #d5dede !important;
+}
+.panel .b-light .github_language{
+    font-size: 15px;
+}
+.panel div.b-light.bg-black {
+    color: #fff;
+    background-color: #111;
+}
+
+.panel div.b-light.bg-warning {
+    color: #fffefa;
+    background-color: #fad733;
+}
+
+.panel div.b-light.bg-primary {
+    color: #f4f3f9;
+    background-color: #7266ba;
+}
+
+.panel div.b-light.bg-danger {
+    color: #fff;
+    background-color: #f05050;
+}
+
+.panel div.b-light .panel div.b-light .panel div.b-light .panel div.b-light
 /* 
 首页文章图片模态框大小响应式
 
@@ -406,3 +456,4 @@ div.blog-post div.panel-picture {
     transition: opacity .35s,transform .35s;
     transform: scale3d(1, 1, 1)
 } */
+
