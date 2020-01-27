@@ -186,6 +186,9 @@ div.support-author>button.btn-pay {
 #postpage div.panel {
     background-color: rgba(255, 255, 255, 0.07);
 }
+#postpage .panel {
+    background-color: rgba(255, 255, 255, 0.7);
+}
 
 #postpage .post-img-figcaption {
     color: #252222;
@@ -227,7 +230,7 @@ div.support-author>button.btn-pay {
     color: #464646 !important;
 }
 
-code {
+code:not(.hljs) {
     /* code样式修改 */
     color: #c7254ed4 !important;
     /* background-color: rgba(255, 255, 255, 0.08) !important; */
@@ -254,9 +257,16 @@ code {
     border-bottom: 1px solid #ffffff00 !important;
 }
 
-/* 将全部字体加粗 */
+/* 字体加粗 */
 
-* {
+.dropdown.wrapper span.clear, nav.navi ul.nav >li, nav.navi ul.nav >li>span,
+nav.navi ul.nav >li>a,#tag_cloud-2 h5{
+    font-weight: 900;
+}
+#small_widgetsul ul.entry-meta.text-muted,#post-panel .breadcrumb,#widget-tabs-4-hots h5,
+#widget-tabs-4-hots h4,#widget-tabs-4-hots a,#blog_info li,
+#widget-tabs-4-comments h4,#widget-tabs-4-comments a,
+#widget-tabs-4-random h4,#widget-tabs-4-random a{
     font-weight: 900;
 }
 
@@ -283,6 +293,20 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     /* 标题炫光 */
     text-shadow: 0 0 3px #fff !important;
     font-size: 26px !important;
+}
+
+/* 评论可见背景颜色修改 */
+.hideContent {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 修改站内文章分享样式 */
+.post-inser .text-muted {
+    color: rgb(53, 51, 51);
+    font-size: 15px;
+}
+#post-content .preview .post-inser{
+    margin: 0 !important;
 }
 /* 
 首页文章图片模态框大小响应式
