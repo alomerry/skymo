@@ -8,6 +8,11 @@
 document.body.addEventListener('copy', function (e) {
     if (window.getSelection().toString() && window.getSelection().toString().length > 42) {
         setClipboardText(e);
+        swal({
+            title: '复制成功! 转载请注明出处',
+            timer: 700,
+            button:false
+          })
         // alert('商业转载请联系作者获得授权，非商业转载请注明出处哦~\n谢谢合作~(｡・`ω´･)');
     }
 });
@@ -30,7 +35,6 @@ function setClipboardText(event) {
             + '商业转载请联系作者获得授权，非商业转载请注明出处。\n'
             + '作者：' + author + '\n'
             + '链接：' + window.location.href + '\n';
-        console.log(textData);
         clipboardData.setData('text/html', htmlData);
         clipboardData.setData('text/plain', textData);
     }

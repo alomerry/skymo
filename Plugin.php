@@ -101,6 +101,10 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         //版权相关
         $copyright = $options->pluginUrl . '/SkyMo/js/copyright.js';
         echo "<script src='$copyright'></script>";
+        
+        //文本框打字机特效
+        $type = $options->pluginUrl . '/SkyMo/js/commentTyping.js';
+        echo "<script src='$type'></script>";
 
         
     }

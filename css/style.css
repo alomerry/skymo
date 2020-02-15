@@ -384,6 +384,26 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     color: #000000d4;
 }
 
+/* 复制模态框 */
+
+.swal-title:first-child {
+    margin-top: 0px;
+}
+
+.swal-title {
+    color: rgba(0, 0, 0, .65);
+    padding: 5px 5px;
+    font-size: 17px;
+}
+
+.swal-modal {
+    width: 250px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
 /* 
 .panel div.b-light .panel div.b-light .panel div.b-light .panel div.b-light
 
