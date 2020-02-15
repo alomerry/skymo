@@ -97,6 +97,12 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         //星星鼠标轨迹
         $mouseStar = $options->pluginUrl . '/SkyMo/js/mouse/star/canvas.js';
         echo "<script src='$mouseStar'></script>";
+
+        //版权相关
+        $copyright = $options->pluginUrl . '/SkyMo/js/copyright.js';
+        echo "<script src='$copyright'></script>";
+
+        
     }
 
     /**
@@ -116,7 +122,5 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
 
         $src = $options->pluginUrl . '/SkyMo/js/header.js';
         echo "<script src='$src'></script>";
-        $copyright = $options->pluginUrl . '/SkyMo/js/copyright.js';
-        echo "<script src='$copyright'></script>";
     }
 }
