@@ -357,8 +357,20 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     background-color: #f05050;
 }
 
-.panel div.b-light .panel div.b-light .panel div.b-light .panel div.b-light
+/* 目录树 */
+#toc{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+#toc a {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+.tags .tocify-item {
+    background-color: rgba(255, 255, 255, 0)
+}
+
 /* 
+.panel div.b-light .panel div.b-light .panel div.b-light .panel div.b-light
+
 首页文章图片模态框大小响应式
 
 @media screen and (max-width: 1200px) {
