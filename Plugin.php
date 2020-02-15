@@ -116,5 +116,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
 
         $src = $options->pluginUrl . '/SkyMo/js/header.js';
         echo "<script src='$src'></script>";
+        $copyright = $options->pluginUrl . '/SkyMo/js/copyright.js';
+        echo "<script src='$copyright'></script>";
     }
 }

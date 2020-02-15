@@ -328,15 +328,19 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     color: #58666e !important;
     background-color: #edf1f2;
 }
-.panel div.b-light.bg-light .text-muted{
+
+.panel div.b-light.bg-light .text-muted {
     color: #98a6ad;
 }
-.panel div.b-light.bg-light .lter{
+
+.panel div.b-light.bg-light .lter {
     background-color: #d5dede !important;
 }
-.panel .b-light .github_language{
+
+.panel .b-light .github_language {
     font-size: 15px;
 }
+
 .panel div.b-light.bg-black {
     color: #fff;
     background-color: #111;
@@ -358,14 +362,26 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
 }
 
 /* 目录树 */
-#toc{
+
+#toc {
     background-color: rgba(255, 255, 255, 0) !important;
 }
+
 #toc a {
     background-color: rgba(255, 255, 255, 0) !important;
 }
+
 .tags .tocify-item {
     background-color: rgba(255, 255, 255, 0)
+}
+
+/* 文章版权 */
+
+#post-content blockquote.content-copyright {
+    border-left: 5px solid #f05050!important;
+    margin: 1.6em 0px;
+    padding: 13px 25px!important;
+    color: #000000d4;
 }
 
 /* 
@@ -468,4 +484,3 @@ div.blog-post div.panel-picture {
     transition: opacity .35s,transform .35s;
     transform: scale3d(1, 1, 1)
 } */
-
