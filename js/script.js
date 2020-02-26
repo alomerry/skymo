@@ -38,7 +38,7 @@ $(document).ready(function () {
         '</div>' +
         '&nbsp;|&nbsp;\n' +
         '<div class="github-badge">\n' +
-        '    <a href="" target="_blank" title="">\n' +
+        '    <a href="http://www.beian.miit.gov.cn" target="_blank" title="">\n' +
         '        <span class="badge-subject">苏</span>' +
         '        <span class="badge-value bg-brightgreen">ICP备19037502号</span>\n' +
         '    </a>\n' +
