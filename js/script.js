@@ -23,7 +23,7 @@ $(document).ready(function () {
         '</div>' +
         '&nbsp;|&nbsp;\n' +
         '<div class="github-badge">\n' +
-        '    <a href="http://www.cloudmo.top" target="_blank" title="Handsome由就当一次路过丶修改">\n' +
+        '    <a href="http://alomerry.com" target="_blank" title="Handsome由就当一次路过丶修改">\n' +
         '        <span class="badge-subject">Modified</span>' +
         '        <span class="badge-value bg-red">就当一次路过丶</span>\n' +
         '    </a>\n' +
@@ -39,8 +39,8 @@ $(document).ready(function () {
         '&nbsp;|&nbsp;\n' +
         '<div class="github-badge">\n' +
         '    <a href="http://www.beian.miit.gov.cn" target="_blank" title="">\n' +
-        '        <span class="badge-subject">苏</span>' +
-        '        <span class="badge-value bg-brightgreen">ICP备19037502号</span>\n' +
+        '        <span class="badge-subject">VPS</span>' +
+        '        <span class="badge-value bg-brightgreen">HongKong</span>\n' +
         '    </a>\n' +
         '</div>';
     $('#footer span.pull-right').html(copyrightInfo);
@@ -63,7 +63,7 @@ $(document).ready(function () {
         $(this).find("h3 a span").remove();
     });
 
-    setTimeout(function () {
-        document.querySelector(".skPlayer-source").volume = 0.12;
-    }, 3000);
+    // setTimeout(function () {
+    //     document.querySelector(".skPlayer-source").volume = 0.12;
+    // }, 3000);
 })

@@ -21,7 +21,7 @@ function setClipboardText(event) {
     if (clipboardData) {
         event.preventDefault();
         var author = "就当一次路过丶"//"<?php $this->author() ?>";
-        var url = "http://www.cloudmo.top";//"<?php $this->options->siteUrl(); ?>";
+        var url = "http://alomerry.com";//"<?php $this->options->siteUrl(); ?>";
         var htmlData = ''
             + window.getSelection().toString()
             + '著作权归作者所有。<br>'
