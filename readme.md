@@ -301,15 +301,15 @@ div.dropdown.wrapper span img.normal-shadow{
 
 
   [1]: https://github.com/Morizunzhu/SkyMo
-  [2]: http://www.cloudmo.top/usr/uploads/2020/01/1523369272.png
-  [3]: http://www.cloudmo.top/usr/uploads/2020/01/629167857.png
-  [4]: http://www.cloudmo.top/archives/195/
-  [5]: http://www.cloudmo.top/usr/uploads/2020/01/499543144.gif
-  [6]: http://www.cloudmo.top/usr/uploads/2020/01/2908048897.png
-  [7]: http://www.cloudmo.top/usr/uploads/2020/01/673845452.gif
-  [8]: http://www.cloudmo.top/usr/uploads/2020/01/286602434.gif
-  [9]: http://www.cloudmo.top/usr/uploads/2020/01/1357181980.png
-  [10]: http://www.cloudmo.top/usr/uploads/2020/01/3349164392.png
-  [11]: http://www.cloudmo.top/usr/uploads/2020/01/3441578448.gif
-  [12]: http://www.cloudmo.top/usr/uploads/2020/01/2240396392.gif
+  [2]: https://alomerry.com/usr/uploads/2020/01/1523369272.png
+  [3]: https://alomerry.com/usr/uploads/2020/01/629167857.png
+  [4]: https://alomerry.com/archives/195/
+  [5]: https://alomerry.com/usr/uploads/2020/01/499543144.gif
+  [6]: https://alomerry.com/usr/uploads/2020/01/2908048897.png
+  [7]: https://alomerry.com/usr/uploads/2020/01/673845452.gif
+  [8]: https://alomerry.com/usr/uploads/2020/01/286602434.gif
+  [9]: https://alomerry.com/usr/uploads/2020/01/1357181980.png
+  [10]: https://alomerry.com/usr/uploads/2020/01/3349164392.png
+  [11]: https://alomerry.com/usr/uploads/2020/01/3441578448.gif
+  [12]: https://alomerry.com/usr/uploads/2020/01/2240396392.gif
   [13]: https://www.icnfox.cn/archives/42.html
