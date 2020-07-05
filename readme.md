@@ -1,40 +1,43 @@
-插件最新更新时间：`2020/01/18`
+插件最新更新时间：`2020/07/06`
 
-+ 下载本插件，解压到usr/plugins/目录中
++ 下载本插件，解压到 usr/plugins/ 目录中
 + 进入网站后台-控制台-插件-激活插件
 + [`Github下载地址`][1]
 
-i> 后续更新计划
-将插件设计成可配置选择特效
+> 后续更新计划
 
-i> 前言
-之前暑假乘着优惠买了腾讯云的服务器就一直想写个博客。可惜本人后端的想做个漂亮优雅的博客页面实在太难了QAQ。花了一段时间陆陆续续写了一个还看的过去的乞丐版(GIF)后来考研中间耽搁一段时间，重新回来看自己写的js，css，头大。因为想赶紧刷PAT所以就用typecho搭建了博客，买了一个好康的主题，下面是主题修改教程，被我整合成一个插件。
+[x] 将插件设计成可配置选择特效
+
+> 前言
+
+之前暑假乘着优惠买了腾讯云的服务器就一直想写个博客。可惜本人后端的想做个漂亮优雅的博客页面实在太难了 QAQ。花了一段时间陆陆续续写了一个还看的过去的乞丐版(GIF)后来考研中间耽搁一段时间，重新回来看自己写的 js，css，头大。因为想赶紧刷 PAT 所以就用 typecho 搭建了博客，买了一个好康的主题，下面是主题修改教程，被我整合成一个插件。
+
 部分样式和特效来源网络，侵删。
 
+# 背景
 
-# 1.背景
-##1.1 背景图片
+## 背景图片
 
-> 荒野大镖客2背景
+### 荒野大镖客2背景
 
 ![背景1.png][2]
 
-> 荷塘背景
+### 荷塘背景
 
 ![背景2.png][3]
 
 [`背景图片下载地址`][4]
 
-## 1.2背景流动彩带
+## 背景流动彩带
 
 ![1.gif][5]
 
-在`plugin.php`中引用`ribbon.js` 下载地址
+在 `plugin.php` 中引用 `ribbon.js` 下载地址
 
 可以在js中修改参数
 
 
-```
+```javascript
 // screen helper
     var screenInfo = function (e) {
         var width = Math.max(0, _w.innerWidth || _d.clientWidth || _b.clientWidth || 0),
@@ -54,10 +57,7 @@ i> 前言
     };
 ```
 
-
-
-
-```
+```javascript
 this._canvas = null;
         this._context = null;
         this._sto = null;
@@ -89,9 +89,7 @@ this._canvas = null;
         };
 ```
 
-
-
-```
+```javascript
  this._canvas = document.createElement("canvas");
                 this._canvas.style["display"] = "block";
                 this._canvas.style["position"] = "fixed";
@@ -108,35 +106,29 @@ this._canvas = null;
                 this._canvas.id = "bgCanvas";
 ```
 
-
-
-
-
 ----------
-
 
 # 2.页脚
 
 ![2.png][6]
 
-使用`Github`徽章样式美化，在`plugin.php`中引用`github-badge.css`
-```
+使用 `Github` 徽章样式美化，在 `plugin.php` 中引用 `github-badge.css`
+
+```javascript
 $options = Helper::options();
 $path = $options->pluginUrl . '/SkyMo/';
 echo '<link rel="stylesheet" type="text/css" href="' . $path . 'css/github-badge.css" />';
 ```
 
-
 ----------
-
 
 # 3.赞赏按钮跳动
 
 ![10.gif][7]
 
-在`style.css`文件中添加以下代码
+在 `style.css` 文件中添加以下代码
 
-```
+```css
 @keyframes drop {
     0%  {    transform: scale(1);    }
     50% {    transform: scale(1.2);  }
@@ -148,9 +140,7 @@ div.support-author>button.btn-pay {
 }
 ```
 
-
 ----------
-
 
 # 4.鼠标痕迹
 
@@ -162,16 +152,17 @@ div.support-author>button.btn-pay {
 
 ## 4.2 社会主义核心价值观/爱心浮动
 
-在`plugin.php`中引入`heart.js`或者`scv.js`
+在 `plugin.php` 中引入 `heart.js` 或者 `scv.js`
 
 
 ----------
 
 
-# 5.博客信息
+# 博客信息
 
 ![6.png][9]
-```
+
+```css
 /* 博客信息颜色 */
 
 #blog_info>ul>li:nth-child(1)>span.badge{
@@ -188,13 +179,13 @@ div.support-author>button.btn-pay {
 }
 ```
 
-
 ----------
 
+# 彩色标签
 
-# 6.彩色标签
 ![7.png][10]
-```
+
+```css
 /* Tag颜色 */
 .tags a:nth-child(1)
 {
@@ -210,29 +201,25 @@ div.support-author>button.btn-pay {
 }
 ```
 
-
 ----------
 
+# 去除头像阴影
 
-# 7.去除头像阴影
-
-```
+```css
 /* 去除头像阴影 */
 div.dropdown.wrapper span img.normal-shadow{
     box-shadow:unset !important ;
 }
 ```
 
-
 ----------
 
-
-# 8.首页头像hover转动
+# 首页头像 hover 转动
 
 ![9.gif][11]
 
 
-```
+```css
 /*首页头像自动旋转*/
 .thumb-lg{
     width:130px;
@@ -263,15 +250,13 @@ div.dropdown.wrapper span img.normal-shadow{
 }
 ```
 
-
-
 ----------
 
-
-# 9.首页文章图片获取焦点放大
+# 首页文章图片获取焦点放大
 
 ![8.gif][12]
-```
+
+```css
 .item-thumb{
     cursor: pointer;  
     transition: all 0.6s;  
@@ -291,14 +276,11 @@ div.dropdown.wrapper span img.normal-shadow{
 }
 ```
 
-
 ----------
 
+# 引入bilibili视频响应式样式
 
-# 10. 引入bilibili视频响应式样式
-
-参考[typecho文章内挂载B站视频][13]
-
+参考 [typecho文章内挂载B站视频][13]
 
   [1]: https://github.com/Morizunzhu/SkyMo
   [2]: https://alomerry.com/usr/uploads/2020/01/1523369272.png

@@ -1,0 +1,29 @@
+/*首页头像自动旋转*/
+
+.thumb-lg {
+    width: 130px;
+}
+
+.avatar {
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+
+.avatar:hover {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+}
+
+#aside-user span.avatar {
+    animation-timing-function: cubic-bezier(0, 0, .07, 1)!important;
+    border: 0 solid
+}
+
+#aside-user span.avatar:hover {
+    transform: rotate(360deg) scale(1.2);
+    border-width: 5px;
+    animation: avatar .5s
+}

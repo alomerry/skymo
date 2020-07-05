@@ -1,0 +1,17 @@
+/* 赞赏按钮跳动 */
+
+@keyframes drop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+div.support-author>button.btn-pay {
+    animation: drop 1s infinite;
+}
