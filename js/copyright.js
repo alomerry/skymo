@@ -1,8 +1,8 @@
 /* ***
 
 * 
-* By: Morizunzhu
-* Last Update: 2020.1.14
+* By: Alomerry
+* Last Update: 2020.7.5
 
 *** */
 document.body.addEventListener('copy', function (e) {

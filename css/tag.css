@@ -1,0 +1,31 @@
+/* Tag颜色 */
+
+.tags a:nth-child(1) {
+    background: #3399ffc9;
+}
+
+.tags a:nth-child(2) {
+    background: #ff3300b8;
+}
+
+.tags a:nth-child(3) {
+    background: #f90;
+}
+
+/* 博客信息颜色 */
+
+#blog_info>ul>li:nth-child(1)>span.badge {
+    background-color: #0043ff;
+}
+
+#blog_info>ul>li:nth-child(2)>span.badge {
+    background-color: #cc00ff;
+}
+
+#blog_info>ul>li:nth-child(3)>span.badge {
+    background-color: #ffb100;
+}
+
+#blog_info>ul>li:nth-child(4)>span.badge {
+    background-color: #ff0076;
+}
