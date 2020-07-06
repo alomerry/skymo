@@ -159,8 +159,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
      */
     public static function footer()
     {
-        // 你能留下我的信息, 我会很高兴的 ^_^
-        echo "<script>console.log('%c SkyMo v1.1 %c by Alomerry | www.alomerry.com ','color:#444;background:#eee;padding:5px 0;','color:#eee;background:#448bff;padding:5px 0;');</script>"; 
+        echo "<script>console.log('%c SkyMo v1.1 %c by Alomerry | https://www.alomerry.com ','color:#fff; background: linear-gradient(to right , #7A88FF, #d27aff); padding:5px; border-radius: 10px;','color:#fff; background: linear-gradient(to right , #7A88FF, #d27aff); padding:5px; border-radius: 10px;');</script>"; 
         
         $SkyMo = Helper::options()->plugin('SkyMo');
         $path = self::STATIC_DIR;
@@ -173,7 +172,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         //页脚
         if($SkyMo->footStyle == 'open'){
             echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/foot/foot-require.css' />";
-            echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/" .$SkyMo->footCSS."' />";
+            echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/foot/" .$SkyMo->footCSS."' />";
             echo "<script src='" . $path . "/js/footer.js'></script>";
         }
 
