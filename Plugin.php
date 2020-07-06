@@ -1,6 +1,6 @@
 <?php
 /**
- * Handsome主题美化插件
+ * <strong style='color:red'>Handsome主题美化插件</strong>
  * 
  * @package Sky.Mo 
  * @author Alomerry
@@ -27,7 +27,6 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
 
         Typecho_Plugin::factory('Widget_Archive')->header = array(__CLASS__, 'header');
         Typecho_Plugin::factory('Widget_Archive')->footer = array(__CLASS__, 'footer');
-
         return "插件启动成功";
     }
     
@@ -161,7 +160,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
     public static function footer()
     {
         // 你能留下我的信息, 我会很高兴的 ^_^
-        echo "<script>console.log('%c SkyMo v1.1 %c by Alomerry | alomerry.com ','color:#444;background:#eee;padding:5px 0;','color:#eee;background:#448bff;padding:5px 0;');</script>"; 
+        echo "<script>console.log('%c SkyMo v1.1 %c by Alomerry | www.alomerry.com ','color:#444;background:#eee;padding:5px 0;','color:#eee;background:#448bff;padding:5px 0;');</script>"; 
         
         $SkyMo = Helper::options()->plugin('SkyMo');
         $path = self::STATIC_DIR;
