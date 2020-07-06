@@ -12,6 +12,30 @@
     background: #f90;
 }
 
+.tags a:nth-child(4) {
+    background: rgb(119, 156, 226);
+}
+
+.tags a:nth-child(5) {
+    background: rgba(105, 199, 28, 0.603);
+}
+
+.tags a:nth-child(6) {
+    background: rgb(53, 10, 173);
+}
+
+.tags a:nth-child(7) {
+    background: rgb(187, 10, 143);
+}
+
+.tags a:nth-child(8) {
+    background: rgb(23, 143, 190);
+}
+
+.tags a:nth-child(9) {
+    background: rgb(146, 221, 25);
+}
+
 /* 博客信息颜色 */
 
 #blog_info>ul>li:nth-child(1)>span.badge {
