@@ -36,20 +36,6 @@ div.dropdown.wrapper span img.normal-shadow {
     border-radius: 6px 6px 6px 6px;
 }
 
-
-/* 修改 code 样式 */
-
-#post-content pre code {
-    margin: 0px 0px 0px 40px !important;
-    padding: 5px 0px 0px 0px !important;
-}
-
-#post-content pre:before {
-    background: #474949 !important;
-    color: #ffffff !important;
-    padding: 5px 5px 10px 15px !important;
-}
-
 /* bilibili视频挂载 */
 
 .iframe_video {
