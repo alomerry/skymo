@@ -68,7 +68,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $heatBeat = new Typecho_Widget_Helper_Form_Element_Radio('heatBeat',array(
             'open' => _t('开启'),
             'close' => _t('关闭'),
-        ),'open', '',"<img src='https://alomerry.com/usr/uploads/2020/01/673845452.gif' style='width: 7rem;'>");
+        ),'open', '',"<img src='http://alomerry.com/usr/uploads/2020/01/673845452.gif' style='width: 7rem;'>");
         $form->addInput($heatBeat);
         
         //星星轨迹特效
@@ -76,7 +76,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $starTrack = new Typecho_Widget_Helper_Form_Element_Radio('starTrack',array(
             'open' => _t('开启'),
             'close' => _t('关闭'),
-        ),'open', '',"<img src='https://alomerry.com/usr/uploads/2020/01/286602434.gif' style='width: 30rem;'>");
+        ),'open', '',"<img src='http://alomerry.com/usr/uploads/2020/01/286602434.gif' style='width: 30rem;'>");
         $form->addInput($starTrack);
 
         // $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('炫光鼠标特效'), NULL));
@@ -99,7 +99,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $footStyle = new Typecho_Widget_Helper_Form_Element_Radio('footStyle',array(
             'open' => _t('开启'),
             'close' => _t('关闭'),
-        ),'open','',"<img src='https://alomerry.com/usr/uploads/2020/01/2908048897.png' style='width: 30rem;'>");
+        ),'open','',"<img src='http://alomerry.com/usr/uploads/2020/01/2908048897.png' style='width: 30rem;'>");
         $form->addInput($footStyle);
         $footCSS = new Typecho_Widget_Helper_Form_Element_Select("footCSS",array(
             "github-badge.css" => "github-badge.css",
@@ -126,7 +126,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             'open' => _t('开启'),
             'close' => _t('关闭'),
         ), 'open',_t('修改 ribbon.js 可以调整彩带参数、位置和样式。'),
-        "<img src='https://alomerry.com/usr/uploads/2020/01/499543144.gif' style='width: 30rem;'>");
+        "<img src='http://alomerry.com/usr/uploads/2020/01/499543144.gif' style='width: 30rem;'>");
         $form->addInput($backgroundRibbon);
 
         //首页头像 hover 旋转
@@ -135,7 +135,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             'open' => _t('开启'),
             'close' => _t('关闭'),
         ), 'open',_t(''),
-        "<img src='https://alomerry.com/usr/uploads/2020/01/3441578448.gif' style='width: 30rem;'>");
+        "<img src='http://alomerry.com/usr/uploads/2020/01/3441578448.gif' style='width: 30rem;'>");
         $form->addInput($headSpin);
 
         //评论打字机特效
