@@ -8,6 +8,7 @@
  * @link http://alomerry.com
  * version 1.0.0 基本特效
  * version 1.1.0 新增配置单个特效
+ * https://api.github.com/repos/morizunzhu/skymo/releases/latest
  */
 class SkyMo_Plugin implements Typecho_Plugin_Interface
 {
@@ -58,6 +59,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         '<p>此插件帮助你美化 Handsome 主题的一些细节。你可以对插件进行非商用的二次开发。</p>'.
         '<p>有任何问题请联系发邮件至<strong><a href="mailto:wu1jin2cheng3@live.cn"> wu1jin2cheng3@live.cn </a></strong>'.
         '<p>更多信息请参阅 <b><a href="https://github.com/Morizunzhu/SkyMo">详细说明</a></b> '.
+        '<p><b><a href="https://github.com/Morizunzhu/SkyMo/releases/tag/1.1.0">最新版地址</a></b> '.
         '<hr />';
         echo $html;
 
@@ -104,6 +106,19 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             "style.css" => "style.css"
         ),"github-badge.css","样式选择","<strong style='color: #00b8ff9e'> 要切换自定义样式，请替换插件目录下 <code>/css/foot</code> 的 <code>style.css</code> 文件 </strong>");
         $form->addInput($footCSS);
+
+        //代码样式
+        $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('代码样式'), NULL));
+        $codeStyle = new Typecho_Widget_Helper_Form_Element_Radio('codeStyle',array(
+            'open' => _t('开启'),
+            'close' => _t('关闭'),
+        ),'open','',"<img src='https://alomerry.com/usr/uploads/2020/01/2908048897.png' style='width: 30rem;'>");
+        $form->addInput($codeStyle);
+        $codeCSS = new Typecho_Widget_Helper_Form_Element_Select("codeCSS",array(
+            "github-badge.css" => "github-badge.css",
+            "style.css" => "style.css"
+        ),"github-badge.css","样式选择","<strong style='color: #00b8ff9e'> 要切换自定义样式，请替换插件目录下 <code>/css/foot</code> 的 <code>style.css</code> 文件 </strong>");
+        $form->addInput($codeCSS);
         
         //背景彩带特效
         $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('背景彩带特效'), NULL));
@@ -174,6 +189,12 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/foot/foot-require.css' />";
             echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/foot/" .$SkyMo->footCSS."' />";
             echo "<script src='" . $path . "/js/footer.js'></script>";
+        }
+
+        //代码样式
+        if($SkyMo->codeStyle == 'open'){
+            echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/code/code.css' />";
+            // echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/code/" .$SkyMo->codeCSS."' />";
         }
 
         //星星鼠标轨迹
