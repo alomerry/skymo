@@ -4,11 +4,9 @@
     margin: 0px 0px 0px 5px !important;
     padding: 5px 0px 0px 0px !important;
 }
-#post-content pre ::before {
-    content: "" !important;
-}
 #post-content pre:before {
     background: #474949 !important;
     color: #ffffff !important;
-    padding: 5px 5px 10px 15px !important;
+    content: "" !important;
+    padding: 0px 0px 0px 0px !important;
 }
