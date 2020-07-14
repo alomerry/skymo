@@ -132,11 +132,47 @@ div.dropdown.wrapper span img.normal-shadow {
 
 #postpage {
     color: #4a4a4a !important;
+}
+
+#post-content {
+    /* 正文文字大小 */
     font-size: 2rem !important;
+}
+
+h5.text-md {
+    /* 右侧边栏标题文字大小 */
+    font-size: 2rem !important;
+}
+
+nav.navi li.text-xs {
+    /* 左侧栏文字大小 */
+    font-size: 17px !important;
+}
+
+div.dropdown.wrapper .font-bold {
+    /*  博主文字大小 */
+    font-size: 17px !important;
+}
+
+nav.navi ul.nav>li>a {
+    /* 左侧栏文字大小 */
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+
+
+span.badge.pull-right {
+    /* 博文信息气泡文字大小 */
+    font-size: 14px !important;
+    font-weight: 300 !important;
 }
 
 #post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5, #post-content h6 {
     color: #464646 !important;
+}
+
+#blog_info .list-group.box-shadow-wrap-normal {
+    font-size: 16px;
 }
 
 code:not(.hljs) {
@@ -172,7 +208,7 @@ code:not(.hljs) {
     /* font-weight: 900; */
 }
 
-#small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #blog_info li, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
+#small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
     font-weight: 900;
 }
 
@@ -198,7 +234,7 @@ code:not(.hljs) {
 h2.text-ellipsis>a, h3.text-ellipsis>a {
     /* 标题炫光 */
     text-shadow: 0 0 3px #fff !important;
-    font-size: 26px !important;
+    font-size: 1.8em !important;
 }
 
 /* 评论可见背景颜色修改 */
