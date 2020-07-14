@@ -132,6 +132,7 @@ div.dropdown.wrapper span img.normal-shadow {
 
 #postpage {
     color: #4a4a4a !important;
+    font-size: 2rem !important;
 }
 
 #post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5, #post-content h6 {
@@ -168,7 +169,7 @@ code:not(.hljs) {
 /* 字体加粗 */
 
 .dropdown.wrapper span.clear, nav.navi ul.nav>li, nav.navi ul.nav>li>span, nav.navi ul.nav>li>a, #tag_cloud-2 h5 {
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 #small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #blog_info li, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
@@ -276,6 +277,7 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
 
 #toc a {
     background-color: rgba(255, 255, 255, 0) !important;
+    font-size: 16px;
 }
 
 .tags .tocify-item {
