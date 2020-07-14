@@ -314,7 +314,7 @@ body.modal-open {
         height: 300px;
         padding-top: 133px!important;
         padding-bottom: 0!important;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .47);
         color: #fff!important;
         transition: all .3s
     }
