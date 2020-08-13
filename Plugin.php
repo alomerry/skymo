@@ -8,7 +8,7 @@
  * @link http://alomerry.com
  * version 1.0.0 基本特效
  * version 1.1.0 新增配置单个特效
- * https://api.github.com/repos/morizunzhu/skymo/releases/latest
+ * https://api.github.com/repos/alomerry/skymo/releases/latest
  */
 class SkyMo_Plugin implements Typecho_Plugin_Interface
 {
@@ -58,8 +58,8 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $html = '<p>欢迎使用 Handsome 主题美化插件 SkyMo。</p>'.
         '<p>此插件帮助你美化 Handsome 主题的一些细节。你可以对插件进行非商用的二次开发。</p>'.
         '<p>有任何问题请联系发邮件至<strong><a href="mailto:wu1jin2cheng3@live.cn"> wu1jin2cheng3@live.cn </a></strong>'.
-        '<p>更多信息请参阅 <b><a href="https://github.com/Morizunzhu/SkyMo">详细说明</a></b> '.
-        '<p><b><a href="https://github.com/Morizunzhu/SkyMo/releases/tag/1.1.0">最新版地址</a></b> '.
+        '<p>更多信息请参阅 <b><a href="https://github.com/Alomerry/SkyMo">详细说明</a></b> '.
+        '<p><b><a href="https://github.com/Alomerry/SkyMo/releases/tag/1.1.0">最新版地址</a></b> '.
         '<hr />';
         echo $html;
 

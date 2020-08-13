@@ -187,7 +187,7 @@ this._canvas.id = "bgCanvas";
 参考[typecho文章内挂载B站视频][16]
 
 
-  [1]: https://github.com/Morizunzhu/SkyMo
+  [1]: https://github.com/Alomerry/SkyMo
   [2]: https://alomerry.com/usr/uploads/2020/07/1620333604.png
   [3]: https://alomerry.com/usr/uploads/2020/07/2366965718.png
   [4]: https://alomerry.com/usr/uploads/2020/01/1523369272.png
