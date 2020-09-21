@@ -25,7 +25,7 @@ $(document).ready(function () {
         '<div class="github-badge">\n' +
         '    <a href="http://alomerry.com" target="_blank" title="Handsome由就当一次路过丶修改">\n' +
         '        <span class="badge-subject">Modified</span>' +
-        '        <span class="badge-value bg-red">就当一次路过丶</span>\n' +
+        '        <span class="badge-value bg-red">Alomerry</span>\n' +
         '    </a>\n' +
         '</div>';
     //备案号信息
