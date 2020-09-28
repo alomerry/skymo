@@ -402,26 +402,6 @@ body.modal-open {
     }
 }
 
-header.bg-light.wrapper-md {
-    margin-top: 30px;
-    background-color: transparent!important;
-    border: 0;
-    text-align: center;
-    text-shadow: 0 0 3px #000
-}
-
-header.wrapper-md * {
-    color: #fff
-}
-
-header.wrapper-md h1 {
-    font-size: 32px
-}
-
-header.wrapper-md h1 {
-    font-weight: bold!important
-}
-
 /*links*/
 
 .link-main {

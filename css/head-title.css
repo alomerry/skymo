@@ -1,0 +1,26 @@
+font-size: 16px;
+/* 标题样式 */
+header.bg-light.wrapper-md {
+    margin-top: 30px;
+    background-color: transparent!important;
+    border: 0;
+    text-align: center;
+    text-shadow: 0 0 3px #000;
+}
+
+header.wrapper-md * {
+    color: #fff;
+}
+
+header.wrapper-md h1 {
+    font-size: 42px;
+}
+
+header.wrapper-md h1 {
+    font-weight: 300!important;
+}
+
+header.wrapper-md>small {
+    font-size: 18px;
+    font-weight: 300!important;
+}

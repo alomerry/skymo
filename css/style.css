@@ -203,13 +203,19 @@ code:not(.hljs) {
 }
 
 /* 字体加粗 */
-
-.dropdown.wrapper span.clear, nav.navi ul.nav>li, nav.navi ul.nav>li>span, nav.navi ul.nav>li>a, #tag_cloud-2 h5 {
-    /* font-weight: 900; */
+#small_widgetsul ul.entry-meta.text-muted,
+#post-panel .breadcrumb,
+#widget-tabs-4-hots h4,
+#widget-tabs-4-hots a,
+#widget-tabs-4-comments h4,
+#widget-tabs-4-random h4,
+#widget-tabs-4-random a {
+    font-weight: 300;
 }
 
-#small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
-    font-weight: 900;
+/* 热门文章 */
+#widget-tabs-4-hots h5,#widget-tabs-4-comments a{
+    font-weight: 300;
 }
 
 /* 网站消息背景文字大小颜色 */
