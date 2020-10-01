@@ -1,0 +1,22 @@
+/* 目录树 */
+
+#toc {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+#toc a {
+    background-color: rgba(255, 255, 255, 0) !important;
+    font-size: 16px;
+}
+
+.tags .tocify-item {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+div.vditor-outline__item{
+    padding: 10px 0px;
+}
+
+#tag_toc.fixed #toc {
+    max-height: unset!important;
+}

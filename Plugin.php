@@ -246,6 +246,8 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/style.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/card.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head-title.css" />';
+        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/comment.css" />';
+        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/toc.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/tag.css" />';
 
         if($SkyMo->headSpin == "open"){

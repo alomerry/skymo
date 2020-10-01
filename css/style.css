@@ -311,21 +311,6 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     background-color: #f05050;
 }
 
-/* 目录树 */
-
-#toc {
-    background-color: rgba(255, 255, 255, 0) !important;
-}
-
-#toc a {
-    background-color: rgba(255, 255, 255, 0) !important;
-    font-size: 16px;
-}
-
-.tags .tocify-item {
-    background-color: rgba(255, 255, 255, 0)
-}
-
 /* 文章版权 */
 
 #post-content blockquote.content-copyright {
