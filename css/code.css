@@ -1,4 +1,4 @@
-pre code {
+/* pre code {
     color: #2a3e52 !important;
     background-color: #f8f8f8 !important;
   }
@@ -72,4 +72,4 @@ pre code {
   
   div[class*="language-"].line-numbers-mode::after {
     width: .5em;
-  }
+  } */
