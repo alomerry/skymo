@@ -18,5 +18,5 @@ div.vditor-outline__item{
 }
 
 #tag_toc.fixed #toc {
-    max-height: unset!important;
+    /* max-height: unset!important; */
 }
