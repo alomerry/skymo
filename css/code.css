@@ -1,3 +1,12 @@
+#post-content blockquote {
+  color: #555555;
+}
+#post-content blockquote {
+  margin: 1.6em -31px;
+  padding: unset!important;
+  border-left: unset!important;
+  background-color: #f3f5f7;
+}
 /* pre code {
     color: #2a3e52 !important;
     background-color: #f8f8f8 !important;
