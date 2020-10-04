@@ -1,0 +1,9 @@
+#comment.form-control:focus {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.show_hide_div {
+    color: #edf1f2;
+}

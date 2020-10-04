@@ -4,6 +4,7 @@
     font-size: 16px;
 }
 
+
 /*首页文章图片获取焦点放大*/
 
 .item-thumb {
@@ -24,17 +25,20 @@
     transform: scale(1.05);
 }
 
+
 /* 去除头像阴影 */
 
 div.dropdown.wrapper span img.normal-shadow {
     box-shadow: unset !important;
 }
 
+
 /* 大图圆角 */
 
 .item-thumb {
     border-radius: 6px 6px 6px 6px;
 }
+
 
 /* bilibili视频挂载 */
 
@@ -82,11 +86,13 @@ div.dropdown.wrapper span img.normal-shadow {
     top: 0
 }
 
+
 /* 赞赏模态框样式修改 */
 
 #myModal div.modal-content {
     background: rgba(255, 255, 255, 0.53);
 }
+
 
 /* 博文面板样式修改 */
 
@@ -106,7 +112,8 @@ div.dropdown.wrapper span img.normal-shadow {
     background: rgba(255, 255, 255, 0.17);
 }
 
-.show-foot .notebook span, .show-foot .copyright span {
+.show-foot .notebook span,
+.show-foot .copyright span {
     /* 修改日期字体大小 */
     font-size: 14px;
 }
@@ -136,7 +143,8 @@ div.dropdown.wrapper span img.normal-shadow {
 
 #post-content {
     /* 正文文字大小 */
-    font-size: 2rem !important;
+    font-size: 1.9rem !important;
+    font-weight: 400;
 }
 
 h5.text-md {
@@ -160,14 +168,18 @@ nav.navi ul.nav>li>a {
     font-weight: 300 !important;
 }
 
-
 span.badge.pull-right {
     /* 博文信息气泡文字大小 */
     font-size: 14px !important;
     font-weight: 300 !important;
 }
 
-#post-content h1, #post-content h2, #post-content h3, #post-content h4, #post-content h5, #post-content h6 {
+#post-content h1,
+#post-content h2,
+#post-content h3,
+#post-content h4,
+#post-content h5,
+#post-content h6 {
     color: #464646 !important;
 }
 
@@ -181,7 +193,8 @@ code:not(.hljs) {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.panel-default>.panel-footer, .panel-default>.panel-heading {
+.panel-default>.panel-footer,
+.panel-default>.panel-heading {
     /* 修改折叠框背景 */
     background: rgba(0, 0, 0, .17) !important;
 }
@@ -196,21 +209,34 @@ code:not(.hljs) {
     color: #333333c9 !important;
 }
 
-.comment-content-true a, .wrapper-lg .entry-content a {
+.comment-content-true a,
+.wrapper-lg .entry-content a {
     /* 超链接样式 */
     color: rgb(189, 56, 95) !important;
     border-bottom: 1px solid #ffffff00 !important;
 }
 
+
 /* 字体加粗 */
 
-.dropdown.wrapper span.clear, nav.navi ul.nav>li, nav.navi ul.nav>li>span, nav.navi ul.nav>li>a, #tag_cloud-2 h5 {
-    /* font-weight: 900; */
+#small_widgetsul ul.entry-meta.text-muted,
+#post-panel .breadcrumb,
+#widget-tabs-4-hots h4,
+#widget-tabs-4-hots a,
+#widget-tabs-4-comments h4,
+#widget-tabs-4-random h4,
+#widget-tabs-4-random a {
+    font-weight: 500;
 }
 
-#small_widgetsul ul.entry-meta.text-muted, #post-panel .breadcrumb, #widget-tabs-4-hots h5, #widget-tabs-4-hots h4, #widget-tabs-4-hots a, #widget-tabs-4-comments h4, #widget-tabs-4-comments a, #widget-tabs-4-random h4, #widget-tabs-4-random a {
-    font-weight: 900;
+
+/* 热门文章 */
+
+#widget-tabs-4-hots h5,
+#widget-tabs-4-comments a {
+    font-weight: 500;
 }
+
 
 /* 网站消息背景文字大小颜色 */
 
@@ -223,25 +249,30 @@ code:not(.hljs) {
     font-size: 18px !important;
 }
 
+
 /* 修改首页面板背景透明度 */
 
 #post-panel {
     background: rgba(255, 255, 255, 0) !important;
 }
 
+
 /* 首页文章列表标题 */
 
-h2.text-ellipsis>a, h3.text-ellipsis>a {
+h2.text-ellipsis>a,
+h3.text-ellipsis>a {
     /* 标题炫光 */
     text-shadow: 0 0 3px #fff !important;
     font-size: 1.8em !important;
 }
+
 
 /* 评论可见背景颜色修改 */
 
 .hideContent {
     background: rgba(255, 255, 255, 0.3);
 }
+
 
 /* 修改站内文章分享样式 */
 
@@ -253,6 +284,7 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
 #post-content .preview .post-inser {
     margin: 0 !important;
 }
+
 
 /* github 页面修改 */
 
@@ -305,20 +337,6 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     background-color: #f05050;
 }
 
-/* 目录树 */
-
-#toc {
-    background-color: rgba(255, 255, 255, 0) !important;
-}
-
-#toc a {
-    background-color: rgba(255, 255, 255, 0) !important;
-    font-size: 16px;
-}
-
-.tags .tocify-item {
-    background-color: rgba(255, 255, 255, 0)
-}
 
 /* 文章版权 */
 
@@ -328,6 +346,7 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     padding: 13px 25px!important;
     color: #000000d4;
 }
+
 
 /* 复制模态框 */
 
@@ -348,104 +367,3 @@ h2.text-ellipsis>a, h3.text-ellipsis>a {
     border-radius: 5px;
     margin: 20px auto;
 }
-
-/* 
-.panel div.b-light .panel div.b-light .panel div.b-light .panel div.b-light
-
-首页文章图片模态框大小响应式
-
-@media screen and (max-width: 1200px) {
-    .post-thumbnail-inner-modal , .panel-picture .entry-header{
-        height: 190px;
-    }
-    h3.index-post-title{
-        line-height: 95px;
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    .post-thumbnail-inner-modal , .panel-picture .entry-header{
-        height: 250px;
-    }
-    h3.index-post-title{
-        line-height: 125px;
-    }
-}
-
-@media screen and (min-width: 1801px) {
-    .post-thumbnail-inner-modal , .panel-picture .entry-header{
-        height: 280px;
-    }
-    h3.index-post-title{
-        line-height: 140px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .post-thumbnail-inner-modal , .panel-picture .entry-header{
-        height: 260px;
-    }
-    h3.index-post-title{
-        line-height: 130px;
-    }
-}
-@media screen and (max-width: 651px) {
-    .post-thumbnail-inner-modal , .panel-picture .entry-header {
-        height: 220px;
-    }
-    h3.index-post-title{
-        line-height: 120px;
-    }
-}
-
-div.blog-post div.panel-picture {
-    overflow: hidden;
-}
-
-.post-thumbnail a.post-thumbnail-inner {
-    transition: opacity .35s, transform .35s
-}
-
-.panel-picture:hover a.post-thumbnail-inner{
-    添加背景模糊效果
-    filter: blur(3px);
-    添加背景放大效果
-    -webkit-transform: scale3d(1.2, 1.2, 1);
-    transform: scale3d(1.2, 1.2, 1);
-}
-
-.post-thumbnail-inner-modal {
-    首页博文蒙版未获取焦点时的灰色透明背景
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-}
-
-.panel-picture:hover>.post-thumbnail>a.post-thumbnail-inner>div {
-     首页博文蒙版获取焦点时的灰色透明背景
-    background-color: rgba(0, 0, 0, .4);
-}
-.panel-picture div.entry-meta{
-    文章描述隐藏,hover显示
-    opacity: 0;
-    transition: opacity .35s,transform .35s;
-    transform: scale3d(.8, .8, 1);
-    transform-origin: 50% -100%
-}
-.panel-picture:hover div.entry-meta{
-    文章描述隐藏,hover显示
-    opacity: 1;
-    transform: scale3d(1, 1, 1)
-}
-
-.panel-picture > header h3.index-post-title{
-    文章标题隐藏,hover显示
-    transition: opacity .35s,transform .35s;
-    transform: scale3d(.8, .8, 1);
-    transform-origin: 50% 100%
-}
-.panel-picture:hover h3.index-post-title{
-    文章标题hover显示
-    opacity: 1;
-    transition: opacity .35s,transform .35s;
-    transform: scale3d(1, 1, 1)
-} */
