@@ -143,7 +143,8 @@ div.dropdown.wrapper span img.normal-shadow {
 
 #post-content {
     /* 正文文字大小 */
-    font-size: 1.7rem !important;
+    font-size: 1.9rem !important;
+    font-weight: 400;
 }
 
 h5.text-md {
@@ -225,7 +226,7 @@ code:not(.hljs) {
 #widget-tabs-4-comments h4,
 #widget-tabs-4-random h4,
 #widget-tabs-4-random a {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
@@ -233,7 +234,7 @@ code:not(.hljs) {
 
 #widget-tabs-4-hots h5,
 #widget-tabs-4-comments a {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 
