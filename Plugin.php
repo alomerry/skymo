@@ -245,18 +245,18 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/font.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/style.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/card.css" />';
-        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head-title.css" />';
+        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/quote/quote.css" />';
+        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head/head-title.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/comment.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/toc.css" />';
         echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/tag.css" />';
-        echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/code.css" />';
 
         if($SkyMo->headSpin == "open"){
-            echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head-spin.css" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head/head-spin.css" />';
         }
 
         if($SkyMo->heatBeat == "open"){
-            echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/heat-beat.css" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . $path . '/css/head/heat-beat.css" />';
         }
 
         if($SkyMo->visibilityTextShow == "open"){

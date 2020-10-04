@@ -1,15 +1,44 @@
 /* 修改 code 样式 */
 
 #post-content pre code {
-    margin: 0 0 !important;
-    padding: 0 0 !important;
+    padding: 2px 4px;
+    background-color: #ccc !important;
 }
-#post-content pre:before {
-    content: unset !important;
-    /* background: unset !important; */
-    color: unset !important;
-    padding: unset !important;
-}
+
 pre code::-webkit-scrollbar-track-piece {
     background: #474949;
+}
+
+span[class$="keyword"] {
+    color: #d800dc;
+}
+
+span[class$="string"],
+span[class$="char"],
+span[class$="attr-value"],
+span[class$="regex"],
+span[class$="variable"] {
+    color: #26d065;
+}
+
+span[class$="bash"],
+span[class$="boolean"],
+span[class$="number"],
+span[class$="function"] {
+    color: #c15a14;
+}
+
+span[class$="comment"],
+span[class$="block-comment"],
+span[class$="prolog"],
+span[class$="doctype"],
+span[class$="cdata"] {
+    color: #757373;
+}
+
+span[class$="property"],
+span[class$="class-name"],
+span[class$="constant"],
+span[class$="symbol"] {
+    color: #ffb20a;
 }
