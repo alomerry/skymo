@@ -1,6 +1,6 @@
 <?php
 /**
- * <strong style='color:red'>Handsome主题美化插件</strong>
+ * <strong style='color:red'>Handsome 主题美化插件</strong>
  * 
  * @package Sky.Mo 
  * @author Alomerry
@@ -59,7 +59,8 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $html = '<p>欢迎使用 Handsome 主题美化插件 SkyMo V1.2.0。</p>'.
         '<p>此插件帮助你美化 Handsome 主题的一些细节。你可以对插件进行非商用的二次开发。</p>'.
         '<p>有任何问题请联系发邮件至<strong><a href="mailto:alomerry@hotmail.com"> alomerry@hotmail.com </a></strong>'.
-        '<p>更多信息请参阅 <b><a href="https://github.com/Alomerry/SkyMo">详细说明</a></b> '.
+        '<p>二次开发克隆地址 <b><a href="https://github.com/Alomerry/SkyMo">Github</a></b> '.
+        '<p>更多信息请参阅 <b><a href="http://alomerry.com/archives/211/">插件描述</a></b> '.
         '<p><b><a href="https://github.com/Alomerry/SkyMo/releases/latest">最新版地址</a></b> '.
         '<hr />';
         echo $html;
@@ -109,7 +110,8 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $form->addInput($footCSS);
 
         //字体
-        $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('字体'), NULL));
+        $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL,
+        "字体<span style='padding: .1em .4em .1em;background-color: #f05050;font-size: 14px;color: white;border-radius: 5px;'>New</span>", NULL));
         $fontStyle = new Typecho_Widget_Helper_Form_Element_Radio('fontStyle',array(
             'open' => _t('开启'),
             'close' => _t('关闭'),
@@ -118,13 +120,14 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $fontCSS = new Typecho_Widget_Helper_Form_Element_Select("fontCSS",array(
             "ZCOOL-XiaoWei" => "ZCOOL-XiaoWei",
             "Monaco" => "Monaco"
-        ),"github-badge.css","样式选择","");
+        ),"github-badge.css","样式选择",
+        "<img src='http://alomerry.com/usr/uploads/2020/10/2495026317.png' style='width: 15rem;'><img src='http://alomerry.com/usr/uploads/2020/10/2799388962.png' style='width: 15rem;'>");
         $form->addInput($fontCSS);
-        $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('字体生效位置'), NULL));
+//         $form->addInput(new ExTitle_Plugin('btnTitle', NULL, NULL, _t('字体生效位置'), NULL));
         $fontLocation = new Typecho_Widget_Helper_Form_Element_Select("fontLocation",array(
             "body" => "body",
             "md_handsome" => "md_handsome"
-        ),"body","字体生效位置","<strong style='color: #00b8ff9e'>默认样式 ZCOOL XiaoWei，欢迎联系我添加更多字体。 </strong>");
+        ),"body","字体生效位置","<strong style='color: #00b8ff9e'>md_handsome 为正文，body 为全页面。</strong><br><strong style='color: #00b8ff9e'>默认样式 ZCOOL XiaoWei，欢迎联系我添加更多字体。 </strong>");
         $form->addInput($fontLocation);
 
         //代码样式
@@ -155,7 +158,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
             'open' => _t('开启'),
             'close' => _t('关闭'),
         ), 'open',_t(''),
-        "<img src='http://alomerry.com/usr/uploads/2020/01/3441578448.gif' style='width: 30rem;'>");
+        "<img src='http://alomerry.com/usr/uploads/2020/01/3441578448.gif' style='width: 25rem;'>");
         $form->addInput($headSpin);
 
 
