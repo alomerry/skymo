@@ -1,6 +1,6 @@
 <?php
 /**
- * <strong style='color:red'>Handsome主题美化插件</strong>
+ * <strong style='color:red'>Handsome 主题美化插件</strong>
  * 
  * @package Sky.Mo 
  * @author Alomerry
