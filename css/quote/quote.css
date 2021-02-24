@@ -1,4 +1,4 @@
-#post-content blockquote {
+#post-content > div blockquote {
     color: #4a4a4a!important;
     padding: unset!important;
     border-left: unset!important;
@@ -7,7 +7,7 @@
     border-left: 5px solid #099e43!important;
 }
 
-#post-content blockquote.content-copyright {
+#post-content > div > blockquote.content-copyright {
     background-color: rgba(255, 255, 255, 0)!important;
     background: rgb(255 255 255 / .3)!important
 }

@@ -4,7 +4,7 @@
  * 
  * @package Sky.Mo 
  * @author Alomerry
- * @version 1.2.0
+ * @version 1.2.1
  * @link http://alomerry.com
  * version 1.0.0 基本特效
  * version 1.1.0 新增配置单个特效
@@ -119,7 +119,8 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $form->addInput($fontStyle);
         $fontCSS = new Typecho_Widget_Helper_Form_Element_Select("fontCSS",array(
             "ZCOOL-XiaoWei" => "ZCOOL-XiaoWei",
-            "Monaco" => "Monaco"
+            "Monaco" => "Monaco",
+            "Wawa" => "Wawa"
         ),"github-badge.css","样式选择",
         "<img src='http://alomerry.com/usr/uploads/2020/10/2495026317.png' style='width: 15rem;'><img src='http://alomerry.com/usr/uploads/2020/10/2799388962.png' style='width: 15rem;'>");
         $form->addInput($fontCSS);
@@ -127,7 +128,7 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         $fontLocation = new Typecho_Widget_Helper_Form_Element_Select("fontLocation",array(
             "body" => "body",
             "md_handsome" => "md_handsome"
-        ),"body","字体生效位置","<strong style='color: #00b8ff9e'>md_handsome 为正文，body 为全页面。</strong><br><strong style='color: #00b8ff9e'>默认样式 ZCOOL XiaoWei，欢迎联系我添加更多字体。 </strong>");
+        ),"body","字体生效位置","<strong style='color: #00b8ff9e'>md_handsome 为正文，body 为全页面。</strong><br><strong style='color: #00b8ff9e'>默认样式 ZCOOL XiaoWei，欢迎联系我添加更多字体。 </strong><br> Wawa 字体来源 nekox.cn");
         $form->addInput($fontLocation);
 
         //代码样式
@@ -254,22 +255,31 @@ class SkyMo_Plugin implements Typecho_Plugin_Interface
         //代码样式
         if($SkyMo->fontStyle == 'open'){
             $css = "";
+            $needSetCss = true;
             switch ($SkyMo->fontCSS)
             {
                 case "ZCOOL-XiaoWei":
+                    echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/font/font-ZCOOL.css' />";
                     $css = "'ZCOOL XiaoWei'";
                     break;
                 case "Monaco":
                     $css = "Menlo,Monaco,Consolas,'Courier New',monospace";
                     break;
+                case "Wawa":
+                    echo "<link rel='stylesheet' type='text/css' href='" . $path . "/css/font/font-Wawa.css' />";
+                    $css = "Wawa";
+                    break;
                 default:
+                    $needSetCss = false;
                     break;
             }
             $location = '#' . $SkyMo->fontLocation;
             $js .= '<script>';
             $js .= <<<JS
 jQuery(document).ready(function() {
-    $('$location').css("font-family","$css");
+    if($needSetCss){
+        $('$location').css("font-family","$css");
+    }
 });
 JS;
             $js .= '</script>';
