@@ -187,12 +187,6 @@ span.badge.pull-right {
     font-size: 16px;
 }
 
-code:not(.hljs) {
-    /* code样式修改 */
-    color: #c7254ed4 !important;
-    background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
 .panel-default>.panel-footer,
 .panel-default>.panel-heading {
     /* 修改折叠框背景 */

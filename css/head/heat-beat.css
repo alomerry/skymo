@@ -15,3 +15,9 @@
 div.support-author>button.btn-pay {
     animation: drop 1s infinite;
 }
+
+button.btn-pay {
+    color: #fff!important;
+    background-color: #f05050;
+    border-color: #f05050;
+}

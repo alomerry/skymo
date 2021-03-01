@@ -20,7 +20,7 @@ function setClipboardText(event) {
     var clipboardData = event.clipboardData || window.clipboardData;
     if (clipboardData) {
         event.preventDefault();
-        var author = "就当一次路过丶"//"<?php $this->author() ?>";
+        var author = "人间有味是清欢丶"//"<?php $this->author() ?>";
         var url = "http://alomerry.com";//"<?php $this->options->siteUrl(); ?>";
         var htmlData = ''
             + window.getSelection().toString()

@@ -23,7 +23,7 @@ $(document).ready(function () {
         '</div>' +
         '&nbsp;|&nbsp;\n' +
         '<div class="github-badge">\n' +
-        '    <a href="http://alomerry.com" target="_blank" title="Handsome由就当一次路过丶修改">\n' +
+        '    <a href="http://alomerry.com" target="_blank" title="Handsome由人间有味是清欢丶修改">\n' +
         '        <span class="badge-subject">Modified</span>' +
         '        <span class="badge-value bg-red">Alomerry</span>\n' +
         '    </a>\n' +
