@@ -1,4 +1,11 @@
 /* 修改 code 样式 */
+pre li{
+    list-style-type: none;
+}
+
+pre code.hljs {
+    padding: 15px 15px 0px 15px!important;
+}
 
 #post-content pre code {
     padding: 2px 4px;
